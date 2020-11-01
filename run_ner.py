@@ -17,9 +17,9 @@ config = albert.Config()
 dataset_train = []
 dataset_test = []
 dataset_val = []
-dataLoader_train = DataLoader(dataset=dataset_train, batch=config.batch_size)
-dataLoader_test = DataLoader(dataset=dataset_test, batch=config.batch_size)
-dataLoader_val = DataLoader(dataset=dataset_val, batch=config.batch_size)
+dataLoader_train = DataLoader(dataset_train, config.batch_size)
+dataLoader_test = DataLoader(dataset_test, config.batch_size)
+dataLoader_val = DataLoader(dataset_val, config.batch_size)
 print(len(dataLoader_train))
 print(len(dataLoader_test))
 print(len(dataLoader_val))

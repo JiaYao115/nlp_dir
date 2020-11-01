@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 
 class Config(object):
-    def __init__(self):
+    def batch_size__init__(self):
         module_name = 'ALBert'
         save_path = f'../save/{module_name}.pkl'
 
